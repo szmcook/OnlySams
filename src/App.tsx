@@ -6,6 +6,11 @@ function App() {
       <IntroText>
         OnlySams
       </IntroText>
+
+      <SubHeading>
+        Content coming soon...
+      </SubHeading>
+
     </AppBackground>
   )
 }
@@ -20,8 +25,14 @@ const IntroText = styled.h1`
   color: var(--green_logo);
   font-family: "Fira Code", monospace;
   font-size: 70px;
-  font-weight: <weight>;
-  font-style: normal;
+  font-weight: 700;
+`;
+
+const SubHeading = styled.h1`
+  color: var(--green_logo);
+  font-family: "Fira Code", monospace;
+  font-size: 20px;
+  font-weight: 400;
 `;
 
 const AppBackground = styled.div<AppBackgroundProps>`
