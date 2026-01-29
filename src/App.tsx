@@ -7,7 +7,6 @@ function App() {
       <IntroText>
         OnlySams
       </IntroText>
-      <Logo src={ sam1 } />
     </AppBackground>
   )
 }
