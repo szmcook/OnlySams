@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import sam1 from './assets/sam1.jpg';
 
 function App() {
   return (
@@ -24,11 +23,6 @@ const IntroText = styled.h1`
   font-weight: <weight>;
   font-style: normal;
 `;
-
-const Logo = styled.img`
-  height: 100%;
-  width: 50%;
-`
 
 const AppBackground = styled.div<AppBackgroundProps>`
   --green_logo: ${props => props.green_logo};
