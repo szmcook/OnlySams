@@ -1,16 +1,14 @@
 import styled from 'styled-components';
-import viteLogo from '/vite.svg'
+import sam1 from './assets/sam1.jpg';
 
 function App() {
   return (
-    <>
-      <AppBackground green_logo="#53ad6f" background_color="#171717">
-            <IntroText>
-                Welcome to OnlySams
-            </IntroText>
-            <Logo src={ 'https://photos.app.goo.gl/ZN7dT22QaJYbUqcu7' } />
-        </AppBackground>
-    </>
+    <AppBackground green_logo="#53ad6f" background_color="#171717">
+      <IntroText>
+        OnlySams
+      </IntroText>
+      <Logo src={ sam1 } />
+    </AppBackground>
   )
 }
 
@@ -23,14 +21,14 @@ interface AppBackgroundProps {
 const IntroText = styled.h1`
   color: var(--green_logo);
   font-family: "Fira Code", monospace;
-  font-optical-sizing: auto;
+  font-size: 70px;
   font-weight: <weight>;
   font-style: normal;
 `;
 
 const Logo = styled.img`
-  width: 150px;
-  height: 150px;
+  height: 100%;
+  width: 50%;
 `
 
 const AppBackground = styled.div<AppBackgroundProps>`
